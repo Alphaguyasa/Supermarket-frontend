@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rowda Supermarket - Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .login-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+      }
+      .login-container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .login-container input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+      .login-container input:invalid {
+        border-color: #ff6f61;
+      }
+      .login-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: orange;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .login-container button:hover {
+        background-color: #ff3b2f;
+      }
+      .login-container p {
+        margin-top: 20px;
+        color: #555;
+      }
+      .login-container a {
+        color: #ff6f61;
+        text-decoration: none;
+      }
+      .login-container a:hover {
+        text-decoration: underline;
+      }
+      .error-message {
+        color: #ff6f61;
+        font-size: 0.9em;
+        margin-top: 5px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login to Rowda Supermarket</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email address" required />
+        <div id="emailError" class="error-message">
+          Please enter a valid email address.
+        </div>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+          minlength="6"
+        />
+        <div id="passwordError" class="error-message">
+          Password must be at least 6 characters long.
+        </div>
+        <button type="submit"><a href="ind.html">LOGIN</a></button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

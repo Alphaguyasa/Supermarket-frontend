@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rowda Supermarket - Sign Up</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .signup-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+      }
+      .signup-container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .signup-container input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+      .signup-container input:invalid {
+        border-color: #ff6f61;
+      }
+      .signup-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: orange;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .signup-container button:hover {
+        background-color: #ff3b2f;
+      }
+      .signup-container p {
+        margin-top: 20px;
+        color: #555;
+      }
+      .signup-container a {
+        color: #ff6f61;
+        text-decoration: none;
+      }
+      .signup-container a:hover {
+        text-decoration: underline;
+      }
+      .error-message {
+        color: #ff6f61;
+        font-size: 0.9em;
+        margin-top: 5px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>Sign Up for Rowda Supermarket</h2>
+      <form id="signupForm">
+        <input type="text" id="fullName" placeholder="Full Name" required />
+        <div id="nameError" class="error-message">
+          Please enter your full name.
+        </div>
+        <input type="email" id="email" placeholder="Email address" required />
+        <div id="emailError" class="error-message">
+          Please enter a valid email address.
+        </div>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+          minlength="6"
+        />
+        <div id="passwordError" class="error-message">
+          Password must be at least 6 characters long.
+        </div>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+        <div id="confirmPasswordError" class="error-message">
+          Passwords do not match.
+        </div>
+        <button type="submit"><a href="login.html">SIGN UP</a></button>
+      </form>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
